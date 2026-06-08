@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
 <title>Evan Miller | Filmmaker</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -337,13 +337,41 @@ footer{
 </section>
 
 <section id="contact">
-    <h2 class="section-title">Contact</h2>
+    <h2 class="section-title">Contact / Book Me</h2>
 
-    <div class="contact">
-        <p>Interested in working together?</p>
-        <br>
-        <p>Email: your@email.com</p>
-        <p>Instagram: @yourhandle</p>
+    <div class="contact-wrapper">
+
+        <p class="contact-text">
+            Interested in working together? Send a message and I’ll get back to you as soon as possible.
+        </p>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <select name="project-type" required>
+                <option value="">Project Type</option>
+                <option value="sports">Sports Videography</option>
+                <option value="event">Event Coverage</option>
+                <option value="short-film">Short Film</option>
+                <option value="other">Other</option>
+            </select>
+
+            <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+
+            <button type="submit">Send Inquiry</button>
+
+        </form>
+
+        <div class="contact-info">
+            <p>Email: evanjmiller195@gmail.com</p>
+            <p>Instagram: @evanmiller.film</p>
+        </div>
+
+    </div>
+</section>
     </div>
 </section>
 
