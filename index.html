@@ -336,16 +336,43 @@ footer{
     </div>
 </section>
 
-<section id="contact">
-    <h2 class="section-title">Contact / Book Me</h2>
+<section id="contact" class="contact">
 
-    <div class="contact-wrapper">
+    <h2 class="section-title">Book a Project</h2>
 
-        <p class="contact-text">
-            Interested in working together? Send a message and I’ll get back to you as soon as possible.
-        </p>
+    <div class="contact-grid">
 
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <!-- LEFT INFO PANEL -->
+        <div class="contact-info">
+
+            <h3>Let’s Make Something Cinematic</h3>
+
+            <p class="contact-subtext">
+                I specialize in sports videography, short films, and event coverage.
+                If you’re looking for clean, cinematic visuals — reach out below.
+            </p>
+
+            <div class="info-block">
+                <p class="label">Email</p>
+                <p class="value">your@email.com</p>
+            </div>
+
+            <div class="info-block">
+                <p class="label">Instagram</p>
+                <p class="value">@yourhandle</p>
+            </div>
+
+            <div class="info-block">
+                <p class="label">Response Time</p>
+                <p class="value">Within 24–48 hours</p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT FORM PANEL -->
+        <form class="contact-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST">
 
             <input type="text" name="name" placeholder="Your Name" required>
 
@@ -354,14 +381,21 @@ footer{
             <select name="project-type" required>
                 <option value="">Project Type</option>
                 <option value="sports">Sports Videography</option>
-                <option value="event">Event Coverage</option>
                 <option value="short-film">Short Film</option>
+                <option value="event">Event Coverage</option>
+                <option value="commercial">Commercial / Promo</option>
                 <option value="other">Other</option>
             </select>
 
             <textarea name="message" placeholder="Tell me about your project..." required></textarea>
 
             <button type="submit">Send Inquiry</button>
+
+        </form>
+
+    </div>
+
+</section>
 
         </form>
 
